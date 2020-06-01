@@ -1,0 +1,9 @@
+.content table thead th{
+	color: tomato;
+	background-color: bisque;
+	padding: 25px;
+}
+
+.table.is-bordered table thead th{
+	border: 20px;
+}

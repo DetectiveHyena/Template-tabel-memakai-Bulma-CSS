@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabel di Bulma</title>
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-primary is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          Tabel
+        </h1>
+        <h2 class="subtitle has-text-centered">
+          Membuat tabel Memakai Bulma CSS
+        </h2>
+     </div>
+  </div>
+</section>
+<br>
+
+<div class="container">
+<div class="content">
+  <h1 class="title has-text-centered">Ubah Data </h1>
+
+  <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="email" name="grup" placeholder="Grup" value="Secret Number" disabled="">
+        <span class="icon is-small is-left">
+          <i class="fas fa-chess-board"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </p>
+</div>
+ <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="text" name="nama" placeholder="Nama Member" value="Ogawa Mizuki (Lea)">
+        <span class="icon is-small is-left">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </p>
+</div>
+ <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="text" name="negara" placeholder="Negara Asal" value="  Jepang">
+        <span class="icon is-small is-left">
+          <i class="far fa-bell"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </p>
+</div>
+ <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="text" name="lahir" placeholder="Tanggal Lahir" value="August 12, 1995" disabled="">
+        <span class="icon is-small is-left">
+          <i class="fas fa-calendar"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </p>
+</div>
+
+<figure class="image is-128x128">
+  <img src="assets/gambar/lea.jpg">
+</figure>
+
+<div id="file-js-example" class="file has-name">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Pilih file fotonya…
+      </span>
+    </span>
+    <span class="file-name">
+      File masih kosong...
+    </span>
+  </label>
+</div>
+<script>
+  const fileInput = document.querySelector('#file-js-example input[type=file]');
+  fileInput.onchange = () => {
+    if (fileInput.files.length > 0) {
+      const fileName = document.querySelector('#file-js-example .file-name');
+      fileName.textContent = fileInput.files[0].name;
+    }
+  }
+</script>
+<br>
+
+<div class="field">
+  <p class="control">
+    <button class="button is-success">
+     <span class="icon is-small">
+          <i class="fas fa-plus"></i>
+        </span><span>Tambah Data</span>
+    </button>
+
+    <a class="button button is-black" href="index.html"><span class="icon is-small">
+          <i class="fas fa-window-close"></i>
+        </span><span>Kembali</span></a>
+  </p>
+
+</div> 
+</div>
+
+
+  </body>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+</html>
